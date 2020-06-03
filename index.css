@@ -1,0 +1,21 @@
+/*this makes the grid and thus the format*/
+.box {  
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 20px 90px 670px 20px;
+    grid-template-rows: auto;
+    grid-template-areas:
+       "a b c a" ; 
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
