@@ -1,24 +1,48 @@
 /*this makes the grid and thus the format*/
-.box {  
+.grid {  
     display: grid;
-    grid-template-columns: 20px 90px 670px;
-    grid-template-rows: auto;
+    justify-content: space-between;
+    align-content: space-between;
+    grid-template-columns: 1fr 20fr 110fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    column-gap: 10px;
+    grid-row-gap: 15px;
     grid-template-areas:
-       "a b c"; 
+       ". h h ."
+       ". n n ."
+       ". s m ."
+       "f f f f"; 
 }
 
-.a {
-    grid-area: a;
+.header {
+    grid-area: h;
+    place-self: center;
 }
 
-.b {
-    grid-area: b;
+.nav {
+    grid-area: n;
 }
 
-.c {
-    grid-area: c;
+.side {
+    grid-area: s;
+    background-color: #CDCECC;
 }
 
-.a, .b, .c{
-    border: 1px solid black;
+.main {
+    grid-area: m;
+    background-color: #CDCECC;
+}
+
+.footer {
+    grid-area: f;
+    color: white;
+    background-color: black;
+    text-align: center;
+    
+}
+
+.nav, .side, .main{
+    border: 0px solid black;
+    border-radius: 15px;
+    padding: 13px;
 }
