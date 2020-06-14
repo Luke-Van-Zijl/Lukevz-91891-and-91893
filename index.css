@@ -1,5 +1,6 @@
 /*this makes the grid and thus the format*/
 .grid {  
+    font-family: 'Heebo', sans-serif;
     display: grid;
     justify-content: space-between;
     align-content: space-between;
@@ -17,10 +18,14 @@
 .header {
     grid-area: h;
     place-self: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
 }
 
 .nav {
     grid-area: n;
+    background-color: #7A91FF;
+    text-align: center;
 }
 
 .side {
@@ -38,6 +43,7 @@
     color: white;
     background-color: black;
     text-align: center;
+    padding: 13px;
     
 }
 
@@ -45,4 +51,8 @@
     border: 0px solid black;
     border-radius: 15px;
     padding: 13px;
+}
+
+a:link, a:visited {
+    color: #000000; text-decoration: none;
 }
